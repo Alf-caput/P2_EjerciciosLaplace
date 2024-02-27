@@ -256,19 +256,26 @@ Aplicamos la transformada de Laplace a ambos lados para pasar al dominio \(s\).
     = 
     F(s)
 \end{align*}
+Dividiendo por \(X(s)\) obtenemos la función de transferencia \(G(s)\)
 \begin{align*}
+    G(s)
+    =
     \dfrac{X(s)}{F(s)}
     =
     \dfrac{1}{m \cdot s^2 + \beta \cdot s + k}
     =
     \dfrac{\dfrac{1}{m}}{s^2 + \dfrac{c}{m} \cdot s + \dfrac{k}{m}}
 \end{align*}
-La forma canónica para sistemas de segundo orden:
+Una expresión de \(X(s)\) cuando se le aplica una entrada a manera de fuerza \(f(t)\) es:
 \begin{align*}
-    \dfrac{X(s)}{F(s)}
+    X(s)
     =
-    K \cdot \dfrac{w_n^2}{s^2 + 2 \cdot \xi \cdot w_n \cdot s + w_n^2}
+    \dfrac{F(s)}{m \cdot s^2 + \beta \cdot s + k}
 \end{align*}
-Identificando términos con nuestro sistema:
-
+Siendo F(s) la transformada de Laplace de nuestra función de entrada f(t):
+\begin{align*}
+    \rightarrow\mathcal{L}[-f(t)]
+    = F(s)
+\end{align*}
+NOTA: En este caso por los ejes elegidos es negativa
 \end{document}
